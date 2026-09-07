@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#f277ab">
+  <title>Feliz cumpleaños, Paloma</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Pacifico&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="photo-rain photo-rain--left" id="left-rain"></div>
+  <div class="photo-rain photo-rain--right" id="right-rain"></div>
+  <div id="confetti"></div>
+
+  <main class="birthday-card">
+    <p class="eyebrow">HOY CELEBRAMOS TU</p>
+    <h1>CUMPLEAÑOS MI AMOR</h1>
+
+    <p class="wish">
+      Que este nuevo año de vida esté lleno de amor, risas y sueños bonitos.
+    </p>
+
+    <div class="cake-scene">
+      <div class="candle candle--one">
+        <span class="flame"></span>
+        <span class="wick"></span>
+      </div>
+
+      <div class="candle candle--two">
+        <span class="flame"></span>
+        <span class="wick"></span>
+      </div>
+
+      <div class="candle candle--three">
+        <span class="flame"></span>
+        <span class="wick"></span>
+      </div>
+
+      <div class="candle candle--four">
+        <span class="flame"></span>
+        <span class="wick"></span>
+      </div>
+
+      <div class="candle candle--five">
+        <span class="flame"></span>
+        <span class="wick"></span>
+      </div>
+
+      <div class="cake cake--top">
+        <span class="icing-text">HAPPY<br>BIRTHDAY</span>
+      </div>
+
+      <div class="cake cake--bottom"></div>
+      <div class="plate"></div>
+    </div>
+
+    <button id="blow-button" type="button">Apagar las velas</button>
+
+    <p class="hint" id="hint">
+      Pide un deseo antes de presionar el botón ✨
+    </p>
+
+    <section class="surprise" id="surprise">
+      <p>¡Feliz cumpleaños, flaquita bonita! 🎉</p>
+      <span>Gracias por hacer mi vida mucho más bonita. Te amo.</span>
+    </section>
+
+    <section class="memory-cards" id="memory-cards">
+      <h2>Hay cuatro cositas que quiero recordarte</h2>
+      <p class="cards-hint">Toca cada foto para descubrirlas 💌</p>
+
+      <div class="cards-grid">
+        <button class="flip-card" type="button" aria-label="Ver mensaje uno">
+          <span class="flip-card-inner">
+            <span class="flip-card-front">
+              <img src="foto5.JPEG" alt="Foto especial de Paloma">
+            </span>
+            <span class="flip-card-back">
+              <span>Tu sonrisa tiene la extraña habilidad de mejorar todos mis días.</span>
+            </span>
+          </span>
+        </button>
+
+        <button class="flip-card" type="button" aria-label="Ver mensaje dos">
+          <span class="flip-card-inner">
+            <span class="flip-card-front">
+              <img src="foto2.PNG" alt="Foto especial de Paloma">
+            </span>
+            <span class="flip-card-back">
+              <span>Eres mi lugar favorito, incluso cuando no estamos en ningún lugar.</span>
+            </span>
+          </span>
+        </button>
+
+        <button class="flip-card" type="button" aria-label="Ver mensaje tres">
+          <span class="flip-card-inner">
+            <span class="flip-card-front">
+              <img src="foto6.JPEG" alt="Foto especial de Paloma">
+            </span>
+            <span class="flip-card-back">
+              <span>Gracias por existir y por dejarme compartir una parte de mi vida contigo.</span>
+            </span>
+          </span>
+        </button>
+
+        <button class="flip-card" type="button" aria-label="Ver mensaje cuatro">
+          <span class="flip-card-inner">
+            <span class="flip-card-front">
+              <img src="foto4.JPEG" alt="Foto especial de Paloma">
+            </span>
+            <span class="flip-card-back">
+              <span>Mi deseo es seguir celebrando muchos cumpleaños más a tu lado.</span>
+            </span>
+          </span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <audio id="birthday-song" loop preload="auto">
+    <source src="cancion.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
